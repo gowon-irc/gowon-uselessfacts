@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uselessfacts
+  labels:
+    app.kubernetes.io/name: uselessfacts
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: uselessfacts
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: uselessfacts
+    spec:
+      containers:
+        - name: uselessfacts
+          image: uselessfacts
+          env:
+            - name: GOWON_BROKER
+              value: mosquitto:1883
