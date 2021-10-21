@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	j = json{
+	j = factJson{
 		Text: "fact",
 	}
 )
