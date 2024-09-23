@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	url = "https://uselessfacts.jsph.pl/random.json?language=en"
+	url = "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en"
 )
 
 type factJson struct {
